@@ -11,10 +11,10 @@ import java.util.Scanner;
                 System.out.println("--------------------------------------------------------------------");
                 System.out.println("A seguir Veja algumas funcionalidades");
                 System.out.println("1- Adicionar Funcionario");
-                System.out.println("2- Adicionar Bibliotecario");
-                System.out.println("3- Ver Historico de Livros Emprestados");
-                System.out.println("4- Ver Todos os Livros da Biblioteca");
-                System.out.println("5- Adicionar Livro");
+                System.out.println("2- Ver Historico de Livros Emprestados");
+                System.out.println("3- Ver Todos os Livros da Biblioteca");
+                System.out.println("4- Sistema Livros");
+                System.out.println("5- Gerenciamento de Usuarios");
                 System.out.println("0- Sair");
                 System.out.println("--------------------------------------------------------------------");
                 System.out.println("Insira a Opção desejada:");
@@ -24,17 +24,16 @@ import java.util.Scanner;
                         System.out.println("Adicionar Funcionario");
                         break;
                     case 2:
-                        System.out.println("Adicionar Bibliotecario");
-                        break;
-                    case 3:
                         System.out.println("Ver Historico de Livros Emprestados");
                         break;
-                    case 4:
+                    case 3:
                         System.out.println("Ver Todos livros ");
                         break;
-                    case 5:
-                        System.out.println("Adicionar Livro");
+                    case 4:
+                        System.out.println("Sistema Livros");
                         break;
+                    case 5:
+                        System.out.println("Gerenciamento de Usuarios");
                     case 0:
                         break;
 
@@ -85,5 +84,16 @@ import java.util.Scanner;
         public int Id;
         public int Quantidade;
         public int Valor;
+
+    }
+
+    class EmprestimoLivros extends Livro{
+
+    }
+
+    class CadastroUsuarios extends Cliente{
+        public CadastroUsuarios(String _Nome, String _CPF, Date _data_nascimento, String _Email, int _Id) {
+            super(_Nome, _CPF, _data_nascimento, _Email, _Id);
+        }
     }
 
