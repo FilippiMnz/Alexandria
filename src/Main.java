@@ -85,10 +85,14 @@ import java.util.Scanner;
         public int Quantidade;
         public int Valor;
 
+        public Livro(String nome, int id, int quantidade) {
+        }
     }
 
     class EmprestimoLivros extends Livro{
-
+        public EmprestimoLivros(String _Nome, int _Id, int _Quantidade){
+            super(_Nome, _Id, _Quantidade);
+        }
     }
 
     class CadastroUsuarios extends Cliente{
