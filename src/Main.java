@@ -101,3 +101,16 @@ import java.util.Scanner;
         }
     }
 
+    // banir usuario
+    // remover usuario
+    //extender emprestimo
+    //Vender Livro
+    //Multa por atraso
+    //demitir Funcionario
+    //calculo Horas-extra
+    //promoção
+    //aumento
+    //Justa-causa
+    // Rescisão
+
+
