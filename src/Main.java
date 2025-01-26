@@ -48,33 +48,35 @@ import java.util.Scanner;
 
     }
     class Pessoa{
-        public String Nome;
-        public int Id;
-        public Date data_nascimento;
-        public String CPF;
-        public String Email;
+        private String Nome;
+        private int Id;
+        private Date data_nascimento;
+        private String CPF;
+        private String Email;
 
-        public Pessoa(String _Nome, String _CPF, Date _data_nascimento, String _Email, int _Id) {
+        private Pessoa(String _Nome, String _CPF, Date _data_nascimento, String _Email, int _Id) {
             this.Nome = _Nome;
             this.CPF = _CPF;
             this.data_nascimento = _data_nascimento;
             this.Email = _Email;
             this.Id = _Id;
         }
-    }
-    class Funcionario extends Pessoa{
-        public Funcionario(String _Nome, String _CPF, Date _data_nascimento, String _Email, int _Id) {
-            super(_Nome, _CPF, _data_nascimento, _Email, _Id);
+
+        public String getPessoa(){
+         return Nome;
         }
-        public double Salario;
+        public String SetPessoa(String _Nome){
+            this.Nome = _Nome;
+            return Nome;
+        }
+    }
+    class Funcionario {
+        private double Salario;
         public String Cargo;
-        public Date DataAdmissao;
+        private Date DataAdmissao;
     }
 
-    class Cliente extends Pessoa{
-        public Cliente(String _Nome, String _CPF, Date _data_nascimento, String _Email, int _Id) {
-            super(_Nome, _CPF, _data_nascimento, _Email, _Id);
-        }
+    class Cliente {
         public int QtdLivrosPegos;
         public Date DataVencimento;
     }
@@ -95,10 +97,8 @@ import java.util.Scanner;
         }
     }
 
-    class CadastroUsuarios extends Cliente{
-        public CadastroUsuarios(String _Nome, String _CPF, Date _data_nascimento, String _Email, int _Id) {
-            super(_Nome, _CPF, _data_nascimento, _Email, _Id);
-        }
+    class CadastroUsuarios {
+
     }
 
     // banir usuario
